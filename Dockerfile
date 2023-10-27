@@ -11,7 +11,7 @@ RUN apt -qy install gcc libjpeg-dev libxslt-dev libpq-dev libmariadb-dev libmari
 
 WORKDIR /code
 
-COPY stepik_2/requirements.txt /code/
+COPY requirements.txt /code/
 
 RUN pip install -r requirements.txt
 
