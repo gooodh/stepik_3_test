@@ -12,11 +12,11 @@
 # urlpatterns.extend(router.urls)
 
 from django.urls import path
-from .views import  TokenViewSet
+from .views import TokenViewSet, GoodViewSet
 
 
 urlpatterns = [
     # path('<int:pk>/', GoodViewSet.as_view()),
     path('get_token/', TokenViewSet.as_view(), name='get_token'),
-    path('get_token/<int:pk>/', TokenViewSet.as_view(), name='get_token'),
+    path('goods/', GoodViewSet.as_view(), name='get_goods'),
 ]

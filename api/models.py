@@ -8,6 +8,3 @@ class Good(models.Model):
     amount = models.IntegerField()
     price = models.IntegerField()
 
-
-class Token(models.Model):
-    rand_token = uuid4()
